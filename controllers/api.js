@@ -10,7 +10,7 @@ const users = require("../models/userModel");
 module.exports = class API {
 
     //Product
-    static async fetchAllPosts(req, res) {
+    static async fetchAllProducts(req, res) {
         try {
             const productJson = await products.find();
             res.status(200).json(productJson);
@@ -21,7 +21,7 @@ module.exports = class API {
         }
     }
 
-    static async fetchPostByID(req, res) {
+    static async fetchProductByID(req, res) {
         const id = req.params.id;
         try {
             const productJson = await products.findById(id);
@@ -33,7 +33,7 @@ module.exports = class API {
         }
     }
 
-    static async createPost(req, res) {
+    static async createProduct(req, res) {
         const productJson = req.body;
         try {
             await products.create(productJson);
@@ -47,7 +47,7 @@ module.exports = class API {
         }
     }
 
-    static async updatePost(req, res) {
+    static async updateProduct(req, res) {
         const id = req.params.id;
         const newProductJson = req.body;
         try {
@@ -62,7 +62,7 @@ module.exports = class API {
         }
     }
 
-    static async deletePost(req, res) {
+    static async deleteProduct(req, res) {
         const id = req.params.id;
         try {
             await products.findByIdAndDelete(id);

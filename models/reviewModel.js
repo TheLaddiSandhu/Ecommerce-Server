@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const reviewSchema = mongoose.Schema({
     rating: String,
     comment: String,
-    created: {
+    updated_at: {
         type: Date,
         default: Date.now,
     },

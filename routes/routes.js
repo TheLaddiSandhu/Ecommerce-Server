@@ -17,11 +17,11 @@ let upload = multer({
     storage: storage,
 }).single("image");
 
-router.get("/Product",API.fetchAllPosts);
-router.get("/Product/:id",API.fetchPostByID);
-router.post("/Product", upload, API.createPost);
-router.patch("/Product/:id", upload,API.updatePost);
-router.delete("/Product/:id",API.deletePost);
+router.get("/Product",API.fetchAllProducts);
+router.get("/Product/:id",API.fetchProductByID);
+router.post("/Product", upload, API.createProduct);
+router.patch("/Product/:id", upload,API.updateProduct);
+router.delete("/Product/:id",API.deleteProduct);
 
 
 router.get("/Review",API.fetchAllReviews);

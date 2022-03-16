@@ -4,7 +4,7 @@ const orderSchema = mongoose.Schema({
     sub_total: String,
     tax_amount: String,
     status: String,
-    created: {
+    updated_at: {
         type: Date,
         default: Date.now,
     },

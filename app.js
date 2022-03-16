@@ -22,6 +22,6 @@ mongoose.connect(process.env.DB_URL, {
 }).then(() => console.log('Connected to the database!'))
 .catch((err) => console.log(err));
 
-app.use("/Api/", require("./routes/routes"));
+app.use("/Api", require("./routes/routes"));
 
 app.listen(port, () => console.log('Server running at http://localhost:5000'));

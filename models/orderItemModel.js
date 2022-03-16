@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const orderItemSchema = mongoose.Schema({
     quantity: String,
-    created: {
+    updated_at: {
         type: Date,
         default: Date.now,
     },
