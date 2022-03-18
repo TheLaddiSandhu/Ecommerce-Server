@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "6232f05d348b36464028de87"
+  },
+  "name": "Ali",
+  "email": "ali@gmail.com",
+  "password": "ali@123",
+  "updated_at": {
+    "$date": "2022-03-17T08:25:01.278Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233f136449ee60a3c815de6"
+  },
+  "name": "Sandhu",
+  "email": "sandhu@gmail.com",
+  "password": "sandhu@123",
+  "updated_at": {
+    "$date": "2022-03-18T02:40:54.981Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233f19c449ee60a3c815de9"
+  },
+  "name": "Sohail",
+  "email": "sohail@gmail.com",
+  "password": "sohail@123",
+  "updated_at": {
+    "$date": "2022-03-18T02:42:36.901Z"
+  },
+  "__v": 0
+}]

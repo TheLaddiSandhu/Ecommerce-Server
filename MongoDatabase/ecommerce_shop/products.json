@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "6233e96943b1033cbc78c033"
+  },
+  "name": "iphone 7",
+  "description": "Your new superpower",
+  "longDescription": "Iphone 7 - Grey - 64 GB",
+  "price": "850",
+  "discount": "10",
+  "rating": "15",
+  "image": "1.jpg",
+  "updated_at": {
+    "$date": "2022-03-18T02:07:37.694Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233e99043b1033cbc78c034"
+  },
+  "name": "iphone 8",
+  "description": "Your new superpower",
+  "longDescription": "Iphone 8 - Jet Black - 128 GB",
+  "price": "1000",
+  "discount": "15",
+  "rating": "5",
+  "image": "2.jpg",
+  "updated_at": {
+    "$date": "2022-03-18T02:08:16.297Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233e9be43b1033cbc78c035"
+  },
+  "name": "iphone XR",
+  "description": "Groundbreaking New Design",
+  "longDescription": "Iphone XR - Blue - 128 GB",
+  "price": "1050",
+  "discount": "10",
+  "rating": "5",
+  "image": "3.jpg",
+  "updated_at": {
+    "$date": "2022-03-18T02:09:02.691Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233e9eb43b1033cbc78c036"
+  },
+  "name": "iphone 11",
+  "description": "Just the right amount for everything",
+  "longDescription": "Iphone 11 - Red - 256 GB",
+  "price": "1200",
+  "discount": "10",
+  "rating": "5",
+  "image": "4.jpg",
+  "updated_at": {
+    "$date": "2022-03-18T02:09:47.292Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233ea1143b1033cbc78c037"
+  },
+  "name": "iphone 12",
+  "description": "Blast, Past, Fast",
+  "longDescription": "Iphone 12 - Gold - 256 GB",
+  "price": "1350",
+  "discount": "10",
+  "rating": "5",
+  "image": "5.jpg",
+  "updated_at": {
+    "$date": "2022-03-18T02:10:25.607Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6233ea3c43b1033cbc78c038"
+  },
+  "name": "iphone 13",
+  "description": "Your new superpower",
+  "longDescription": "Iphone 13 - Siera Blue - 512 GB",
+  "price": "1500",
+  "discount": "10",
+  "rating": "5",
+  "image": "6.jpg",
+  "updated_at": {
+    "$date": "2022-03-18T02:11:08.155Z"
+  },
+  "__v": 0
+}]
