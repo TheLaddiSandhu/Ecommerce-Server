@@ -80,7 +80,7 @@ module.exports = class API {
     //Review
     static async fetchAllReviews(req, res) {
         try {
-            const reviewJson = await reviews.find();
+            const reviewJson = await reviews.find().populate('user_id , product_id');
             res.status(200).json(reviewJson);
         } catch (err) {
             res.status(404).json({
@@ -92,7 +92,7 @@ module.exports = class API {
     static async fetchReviewByID(req, res) {
         const id = req.params.id;
         try {
-            const reviewJson = await reviews.findById(id);
+            const reviewJson = await reviews.find({ product_id: id }).populate('user_id , product_id');
             res.status(200).json(reviewJson);
         } catch (err) {
             res.status(404).json({
@@ -147,7 +147,7 @@ module.exports = class API {
     //Order
     static async fetchAllOrders(req, res) {
         try {
-            const orderJson = await orders.find();
+            const orderJson = await orders.find().populate('user_id');
             res.status(200).json(orderJson);
         } catch (err) {
             res.status(404).json({
@@ -159,7 +159,7 @@ module.exports = class API {
     static async fetchOrderByID(req, res) {
         const id = req.params.id;
         try {
-            const orderJson = await orders.findById(id);
+            const orderJson = await orders.findOne({ user_id: id }).populate('user_id');
             res.status(200).json(orderJson);
         } catch (err) {
             res.status(404).json({
@@ -214,7 +214,7 @@ module.exports = class API {
     //Order Item
     static async fetchAllOrderItems(req, res) {
         try {
-            const orderItemJson = await orderItems.find();
+            const orderItemJson = await orderItems.find().populate('order_id , product_id');
             res.status(200).json(orderItemJson);
         } catch (err) {
             res.status(404).json({
@@ -226,7 +226,7 @@ module.exports = class API {
     static async fetchOrderItemByID(req, res) {
         const id = req.params.id;
         try {
-            const orderItemJson = await orderItems.findById(id);
+            const orderItemJson = await orderItems.findById(id).populate('order_id , product_id');
             res.status(200).json(orderItemJson);
         } catch (err) {
             res.status(404).json({
@@ -290,10 +290,12 @@ module.exports = class API {
         }
     }
 
+
+    
     static async fetchUserByID(req, res) {
         const id = req.params.id;
         try {
-            const userJson = await users.findById(id);
+            const userJson = await users.findOne({ email: id });
             res.status(200).json(userJson);
         } catch (err) {
             res.status(404).json({
